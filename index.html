@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VTC Fall 2026 – ISAC Security Tutorial</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    color: #222;
+    background: #fff;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 3rem 2rem 5rem;
+  }
+
+  .venue {
+    font-size: 0.82rem;
+    color: #888;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.75rem;
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    font-family: 'Source Serif 4', serif;
+    font-size: 1.65rem;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 0.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 2.5rem;
+  }
+
+  section { margin-bottom: 2.5rem; }
+
+  h2 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #999;
+    margin-bottom: 0.75rem;
+  }
+
+  p { margin-bottom: 0.75rem; color: #333; }
+  p:last-child { margin-bottom: 0; }
+
+  .program-item {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 0.5rem 1.5rem;
+    padding: 0.6rem 0;
+    border-top: 1px solid #eee;
+    font-size: 0.93rem;
+  }
+  .program-item:last-child { border-bottom: 1px solid #eee; }
+  .program-item .time { color: #999; font-size: 0.82rem; padding-top: 0.15rem; }
+  .program-item .title { font-weight: 600; }
+  .program-item .presenter { color: #666; font-size: 0.85rem; margin-bottom: 0.4rem; }
+  .program-item.break .title { color: #999; font-weight: 400; font-style: italic; }
+  .program-item ul { margin-top: 0.35rem; padding-left: 1.1rem; color: #555; font-size: 0.88rem; }
+  .program-item ul li { margin-bottom: 0.15rem; }
+
+  .presenter { margin-bottom: 1rem; }
+  .presenter strong { display: block; }
+  .presenter span { font-size: 0.88rem; color: #666; }
+</style>
+</head>
+<body>
+
+<div class="venue">IEEE VTC Fall 2026 &mdash; Half-Day Tutorial &mdash; Boston, MA &mdash; September 6, 2026 &mdash; <em>Proposal under review</em></div>
+
+<h1>Security and Privacy in Integrated Sensing and Communication</h1>
+<div class="subtitle">From Physical-Layer Threats to Experimental Validation</div>
+
+<section>
+  <h2>Abstract</h2>
+  <p>As 6G networks move toward standardization, Integrated Sensing and Communication (ISAC) becomes a central functionality. This integration introduces new attack surfaces and raises significant privacy concerns, as wireless systems can directly sense and infer information about their surroundings.</p>
+  <p>This tutorial covers threat modeling, formal performance limits, and experimental results from practical testbeds. Topics include physical-layer attacks (jamming, spoofing, ghost-target injection), cooperative mitigation strategies, identity disclosure in cellular systems, CSI-based activity and location inference, and privacy-preserving countermeasures.</p>
+</section>
+
+<section>
+  <h2>Program</h2>
+  <div class="program-item">
+    <div class="time">Part 1</div>
+    <div>
+      <div class="title">Introduction and Physical-Layer Threats</div>
+      <div class="presenter">Stefania Bartoletti</div>
+      <ul>
+        <li>ISAC in 6G: capabilities, use cases, and expanded attack surface</li>
+        <li>Jamming, spoofing, and replay-based attacks; ghost-target injection</li>
+        <li>Mismatched Cramér–Rao lower bound</li>
+        <li>Cooperative countermeasures leveraging spatial diversity across gNBs</li>
+      </ul>
+    </div>
+  </div>
+  <div class="program-item">
+    <div class="time">Part 2</div>
+    <div>
+      <div class="title">Privacy Leakage Vectors and Experimental Attacks</div>
+      <div class="presenter">Francesco Gringoli</div>
+      <ul>
+        <li>IMSI catching against LTE and 5G-NSA using SDR-based rogue base stations</li>
+        <li>Identity protection via SUCI in 5G Standalone</li>
+        <li>Device-free indoor localization and activity recognition via Wi-Fi CSI</li>
+      </ul>
+    </div>
+  </div>
+  <div class="program-item break">
+    <div class="time"></div>
+    <div class="title">Coffee break</div>
+  </div>
+  <div class="program-item">
+    <div class="time">Part 3</div>
+    <div>
+      <div class="title">Device-Free Sensing: Threats and Countermeasures</div>
+      <div class="presenter">Marco Cominelli</div>
+      <ul>
+        <li>Deep learning techniques for CSI-based localization and activity recognition</li>
+        <li>Beamforming-based CSI obfuscation</li>
+        <li>Experimental results on localization disruption and communication preservation</li>
+      </ul>
+    </div>
+  </div>
+  <div class="program-item">
+    <div class="time">Part 4</div>
+    <div>
+      <div class="title">Open Challenges and Discussion</div>
+      <div class="presenter">All presenters</div>
+      <ul>
+        <li>Security, integrity, and privacy trade-offs in ISAC systems</li>
+        <li>Cross-domain threat modeling and gaps toward standardization</li>
+        <li>Q&amp;A and open discussion</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Presenters</h2>
+  <div class="presenter">
+    <strong>Stefania Bartoletti</strong>
+    <span>University of Rome "Tor Vergata"</span>
+  </div>
+  <div class="presenter">
+    <strong>Francesco Gringoli</strong>
+    <span>University of Brescia</span>
+  </div>
+  <div class="presenter">
+    <strong>Marco Cominelli</strong>
+    <span>Politecnico di Milano</span>
+  </div>
+</section>
+
+</body>
+</html>
